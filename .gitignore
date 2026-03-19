@@ -26,5 +26,8 @@ env/
 .idea/
 *.swp
 
+# Mypy
+.mypy_cache/
+
 # Generated example output
 examples/*.png

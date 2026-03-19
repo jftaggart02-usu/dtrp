@@ -19,7 +19,7 @@ circles = [
 ]
 
 solver = DTRPSolver(circles, kappa_max=1.0, steps_per_circle=30)
-result = solver.solve()
+result = solver.solve(x0=-2, y0=3, visit_order=[0, 1, 2, 3])
 
 print(f"Converged   : {result['success']}")
 print(f"Visit order : {result['visit_order']}")
